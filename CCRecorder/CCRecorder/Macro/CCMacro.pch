@@ -1,0 +1,15 @@
+//
+//  CCMacro.pch
+//  CCRecorder
+//
+//  Created by 冯明庆 on 16/7/22.
+//  Copyright © 2016年 冯明庆. All rights reserved.
+//
+
+#ifndef CCMacro_pch
+#define CCMacro_pch
+
+#import "CCCommonDefine.h"
+
+
+#endif
