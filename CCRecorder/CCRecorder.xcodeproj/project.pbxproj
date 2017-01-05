@@ -8,8 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		3726E6E51D51E22600C053C2 /* CCPlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3726E6E41D51E22600C053C2 /* CCPlayViewController.m */; };
+		376596B51E1F1107001CE366 /* vedio_nav_btn_back_nor.png in Resources */ = {isa = PBXBuildFile; fileRef = 376596AF1E1F1107001CE366 /* vedio_nav_btn_back_nor.png */; };
+		376596B61E1F1107001CE366 /* vedio_nav_btn_back_nor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 376596B01E1F1107001CE366 /* vedio_nav_btn_back_nor@2x.png */; };
+		376596B71E1F1107001CE366 /* vedio_nav_btn_back_pre.png in Resources */ = {isa = PBXBuildFile; fileRef = 376596B11E1F1107001CE366 /* vedio_nav_btn_back_pre.png */; };
+		376596B81E1F1107001CE366 /* vedio_nav_btn_back_pre@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 376596B21E1F1107001CE366 /* vedio_nav_btn_back_pre@2x.png */; };
+		376596B91E1F1107001CE366 /* video_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 376596B31E1F1107001CE366 /* video_icon.png */; };
+		376596BA1E1F1107001CE366 /* video_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 376596B41E1F1107001CE366 /* video_icon@2x.png */; };
+		376596BC1E1F1157001CE366 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 376596BB1E1F1157001CE366 /* Launch Screen.storyboard */; };
 		378500DE1D40CE71002A6A23 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 378500DD1D40CE71002A6A23 /* main.m */; };
-		378500EC1D40CE71002A6A23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 378500EA1D40CE71002A6A23 /* LaunchScreen.storyboard */; };
 		378500F61D40CF00002A6A23 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 378500F51D40CF00002A6A23 /* AppDelegate.m */; };
 		3785025B1D40CF6C002A6A23 /* GLProgram.m in Sources */ = {isa = PBXBuildFile; fileRef = 378500FB1D40CF6C002A6A23 /* GLProgram.m */; };
 		3785025C1D40CF6C002A6A23 /* GPUImage3x3ConvolutionFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 378500FE1D40CF6C002A6A23 /* GPUImage3x3ConvolutionFilter.m */; };
@@ -206,9 +212,15 @@
 /* Begin PBXFileReference section */
 		3726E6E31D51E22600C053C2 /* CCPlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCPlayViewController.h; sourceTree = "<group>"; };
 		3726E6E41D51E22600C053C2 /* CCPlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCPlayViewController.m; sourceTree = "<group>"; };
+		376596AF1E1F1107001CE366 /* vedio_nav_btn_back_nor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vedio_nav_btn_back_nor.png; sourceTree = "<group>"; };
+		376596B01E1F1107001CE366 /* vedio_nav_btn_back_nor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "vedio_nav_btn_back_nor@2x.png"; sourceTree = "<group>"; };
+		376596B11E1F1107001CE366 /* vedio_nav_btn_back_pre.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vedio_nav_btn_back_pre.png; sourceTree = "<group>"; };
+		376596B21E1F1107001CE366 /* vedio_nav_btn_back_pre@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "vedio_nav_btn_back_pre@2x.png"; sourceTree = "<group>"; };
+		376596B31E1F1107001CE366 /* video_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = video_icon.png; sourceTree = "<group>"; };
+		376596B41E1F1107001CE366 /* video_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "video_icon@2x.png"; sourceTree = "<group>"; };
+		376596BB1E1F1157001CE366 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		378500D91D40CE71002A6A23 /* CCRecorder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CCRecorder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		378500DD1D40CE71002A6A23 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		378500EB1D40CE71002A6A23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		378500ED1D40CE71002A6A23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		378500F41D40CF00002A6A23 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		378500F51D40CF00002A6A23 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -642,7 +654,6 @@
 				378500F71D40CF11002A6A23 /* Vendors */,
 				378500F31D40CEBA002A6A23 /* AppDelegate */,
 				378503111D40D0AD002A6A23 /* Resources */,
-				378500EA1D40CE71002A6A23 /* LaunchScreen.storyboard */,
 				378500ED1D40CE71002A6A23 /* Info.plist */,
 				378500DC1D40CE71002A6A23 /* Supporting Files */,
 			);
@@ -1086,7 +1097,14 @@
 		378503111D40D0AD002A6A23 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				376596AF1E1F1107001CE366 /* vedio_nav_btn_back_nor.png */,
+				376596B01E1F1107001CE366 /* vedio_nav_btn_back_nor@2x.png */,
+				376596B11E1F1107001CE366 /* vedio_nav_btn_back_pre.png */,
+				376596B21E1F1107001CE366 /* vedio_nav_btn_back_pre@2x.png */,
+				376596B31E1F1107001CE366 /* video_icon.png */,
+				376596B41E1F1107001CE366 /* video_icon@2x.png */,
 				378503121D40D0D8002A6A23 /* Assets.xcassets */,
+				376596BB1E1F1157001CE366 /* Launch Screen.storyboard */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -1222,11 +1240,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				378500EC1D40CE71002A6A23 /* LaunchScreen.storyboard in Resources */,
+				376596BA1E1F1107001CE366 /* video_icon@2x.png in Resources */,
+				376596B71E1F1107001CE366 /* vedio_nav_btn_back_pre.png in Resources */,
+				376596B81E1F1107001CE366 /* vedio_nav_btn_back_pre@2x.png in Resources */,
 				378503031D40CF6C002A6A23 /* Info.plist in Resources */,
 				378503131D40D0D8002A6A23 /* Assets.xcassets in Resources */,
 				378503101D40D048002A6A23 /* CCRecordViewController.xib in Resources */,
+				376596BC1E1F1157001CE366 /* Launch Screen.storyboard in Resources */,
 				37CC89941D41F48D003F18FB /* 用来防止这个文件夹被删除. txt in Resources */,
+				376596B61E1F1107001CE366 /* vedio_nav_btn_back_nor@2x.png in Resources */,
+				376596B91E1F1107001CE366 /* video_icon.png in Resources */,
+				376596B51E1F1107001CE366 /* vedio_nav_btn_back_nor.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1423,17 +1447,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		378500EA1D40CE71002A6A23 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				378500EB1D40CE71002A6A23 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		378500EE1D40CE71002A6A23 /* Debug */ = {

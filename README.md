@@ -55,7 +55,7 @@
 
 ##### Special Thanks
 
-- Most of the _**`Core Code To Use AvFoundation`**_ was came from _**`SBVideoCapture`**_ (By _**Pandara**_.) .
+- Most of the _**`Core Code To Use AvFoundation`**_ was came from [_**`SBVideoCapture`**_ ](https://github.com/PandaraWen/SBVideoCaptureDemo) (By _**Pandara**_.) .
 - The _**`UIView Category`**_ was came from _**`LBFramework`**_ (By _**Baoming Fu**_.) .
 
 ---
