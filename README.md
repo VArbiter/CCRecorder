@@ -53,47 +53,6 @@
 
 ---
 
-##### Developing Log
-
-2016-07-21 18:28:38 Create Project .
-
-2016-07-21 19:22:13 Main Interface Build .
-
-2016-07-22 14:37:18 Add RecorderHandler .
-
-2016-07-22 17:35:31 A little bit adjustment in GPUImage , for get more interfaces.
-
-2016-07-22 19:06:57 One more step further to ... so called _**a little bit adjustment in GPUImage .**_ Well , to let it expose more interfaces. _(Hope not to cause any unknown crash.)_
-
-2016-07-25 18:43:49 NO CRASH ! HAHA ! And successfully add the bilatera filter to the recorder . BUT , in the end , so called _"a little bit adjustment in GPUImage"_ was not in use . Also , I put that Torch && flash in function , focus mode too.
-
-2016-07-25 19:48:19 Make CCRecorder can change the camera .
-
-2016-07-27 18:39:32 Add a timer indicator with a _**progress bar**_.
-
-2016-07-27 19:06:41 Finished with delegate methods .
-
-2016-08-01 17:11:43 Set Front Camera as default camera and set beauty filter on when intial CCRecorder . Adjust _**Progress Bar IN FUNCTION**_.
-
-2016-08-01 18:53:05 Besides some little BUGs , _**CCRecorder is COMPLETED**_ .
-
-2016-08-01 19:26:51 Make CCRecorder _**support long press and tap**_.
-
-2016-08-02 16:02:24 Fix transform and clip issues .
-
-2016-08-02 17:19:30 Make it can record with filters.
-
-2016-08-03 15:22:27 Almost finished except a critical **BUG** - _Lost the first frame , so that make the merging file looks like have a interruption._ 
-
-2016-08-03 16:33:00 Add a controller for playing .
-
-2016-08-03 18:36:34 Fix Focus issues .
-
-2016-08-15 19:24:09 Finally , _**COMPLETE !**_ 
-
-2016-09-13 14:14:45 Fix BUGS .
-	
----
 ##### Special Thanks
 
 - Most of the _**`Core Code To Use AvFoundation`**_ was came from _**`SBVideoCapture`**_ (By _**Pandara**_.) .
