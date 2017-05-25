@@ -65,6 +65,8 @@ NSString * _ccMergeString(NSString * string , ...);
 
 UIImage * _ccImage(NSString * imageName , BOOL isFile);
 
+NSBundle *_Nullable _ccBundle();
+
 @end
 
 NS_ASSUME_NONNULL_END

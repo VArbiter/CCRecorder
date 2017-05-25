@@ -8,13 +8,11 @@
 
 #import "CCCommonDefine.h"
 
-
 @interface CCCommonDefine ()
 
 @end
 
 @implementation CCCommonDefine
-
 
 BOOL _ccIsiOS9() {
     return [[[UIDevice currentDevice] systemVersion] floatValue] >= 9.0 ? YES : NO;
@@ -65,6 +63,14 @@ NSString * _ccMergeString(NSString * string , ...) {
 
 UIImage * _ccImage(NSString * imageName , BOOL isFile){
     return isFile ? [UIImage imageWithContentsOfFile:imageName] : [UIImage imageNamed:imageName];
+}
+
+NSBundle *_ccBundle(){
+    NSBundle *bundle = [NSBundle bundleWithURL:[[NSBundle bundleForClass:NSClassFromString(@"CCRecordViewController")] URLForResource:@"CCRecorderLibraryBundle" withExtension:@"bundle"]];
+    if (![bundle load]) {
+        return nil;
+    }
+    return bundle;
 }
 
 @end

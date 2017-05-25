@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "CCRecorderLibrary"
-  s.version      = "0.4.25"
+  s.version      = "0.5.33"
   s.summary      = "CCRecorder."
 
   s.description  = <<-DESC
@@ -15,8 +15,14 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, "8.0"
 
-  s.source       = { :path => "CCRecorderLibrary/*"}
+  s.source       = { :path => "CCRecorderLibrary"}
 
-  s.source_files  = "CCRecorderLibrary", "*"
+  s.source_files  = "CCRecorderLibrary", "CCRecorderLibrary/**/*"
+
+  s.resource     = "CCRecorderLibraryBundle.bundle"
+
+  s.frameworks   = "AVFoundation", "QuartzCore" , "CoreGraphics" , "CoreMedia" , "MediaPlayer" , "Foundation" , "UIKit"
+
+  s.requires_arc = true
 
 end

@@ -187,8 +187,8 @@ static CCRecorderHandler *_handler = nil;
 }
 
 - (void) ccRHStopRecording {
-    CCLog(@"_filter -.- %ld",[[_filter targets] count]);
-    CCLog(@"_filterGroup -.- %ld",[[_filterGroup targets] count]);
+    CCLog(@"_filter -.- %ld",(unsigned long)[[_filter targets] count]);
+    CCLog(@"_filterGroup -.- %ld",(unsigned long)[[_filterGroup targets] count]);
     
     [self ccStopTimerCount];
     
