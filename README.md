@@ -27,7 +27,8 @@
 	
 	< string >Video</ string >
 
-- Import _**`ENTIRE PROJECT`**_ to your current project
+- Import _**`CCRecorderLibrary`**_ to your current project , or just `pod install`
+- `pod 'CCRecorderLibrary' , :path => '../CCRecorderLibrary'`
 - To jump to the recorder's view .
 - `First` , in your ViewController _**`#import "CCRecordViewController"`**_
 - `Second` , _**CCRecordViewController *recordeViewController = [[CCRecordViewController alloc] initWithNibName:@"CCRecordViewController" bundle:[NSBundle mainBundle]];**_
@@ -52,21 +53,21 @@ Update :
 
 	2017-05-25 11:20:27 
     filtered the files . remain only the neccessarys .
-    GPUImageContext.h
-    GPUImageOutput.h
-    GPUImageColorConversion.h
-    GPUImageVideoCamera.h
-    GPUImageMovieWriter.h
-    GPUImageFilter.h
-    GLProgram.h
-    GPUImageFramebuffer.h
-    GPUImageFramebufferCache.h
-    GPUImagePicture.h
-    GPUImageBilateralFilter.h
-    GPUImageGaussianBlurFilter.h
-    GPUImageTwoPassTextureSamplingFilter.h
-    GPUImageTwoPassFilter.h
-    GPUImageFilterGroup.h
+    GPUImageContext
+    GPUImageOutput
+    GPUImageColorConversion
+    GPUImageVideoCamera
+    GPUImageMovieWriter
+    GPUImageFilter
+    GLProgram
+    GPUImageFramebuffer
+    GPUImageFramebufferCache
+    GPUImagePicture
+    GPUImageBilateralFilter
+    GPUImageGaussianBlurFilter
+    GPUImageTwoPassTextureSamplingFilter
+    GPUImageTwoPassFilter
+    GPUImageFilterGroup
 
 ---
 
@@ -88,7 +89,6 @@ Update :
 ##### Special Thanks
 
 - Most of the _**`Core Code To Use AvFoundation`**_ was came from [_**`SBVideoCapture`**_ ](https://github.com/PandaraWen/SBVideoCaptureDemo) (By _**Pandara**_.) .
-- The _**`UIView Category`**_ was came from _**`LBFramework`**_ (By _**Baoming Fu**_.) .
 
 ---
 
