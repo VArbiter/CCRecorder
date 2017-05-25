@@ -66,11 +66,7 @@ UIImage * _ccImage(NSString * imageName , BOOL isFile){
 }
 
 NSBundle *_ccBundle(){
-    NSBundle *bundle = [NSBundle bundleWithURL:[[NSBundle bundleForClass:NSClassFromString(@"CCRecordViewController")] URLForResource:@"CCRecorderLibraryBundle" withExtension:@"bundle"]];
-    if (![bundle load]) {
-        return nil;
-    }
-    return bundle;
+    return [NSBundle bundleWithPath:[[NSBundle bundleForClass:NSClassFromString(@"CCRecordViewController")]pathForResource:@"CCRecorderLibraryBundle" ofType:@"bundle"]];
 }
 
 @end
