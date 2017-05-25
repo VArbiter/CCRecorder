@@ -38,6 +38,28 @@
 
 ---
 
+Update :
+
+	2017-05-25 11:20:27 
+    filtered the files . remain only the neccessarys .
+    GPUImageContext.h
+    GPUImageOutput.h
+    GPUImageColorConversion.h
+    GPUImageVideoCamera.h
+    GPUImageMovieWriter.h
+    GPUImageFilter.h
+    GLProgram.h
+    GPUImageFramebuffer.h
+    GPUImageFramebufferCache.h
+    GPUImagePicture.h
+    GPUImageBilateralFilter.h
+    GPUImageGaussianBlurFilter.h
+    GPUImageTwoPassTextureSamplingFilter.h
+    GPUImageTwoPassFilter.h
+    GPUImageFilterGroup.h
+
+---
+
 ##### Dependence Framework
 
 - **AVFoundation.framework**
@@ -63,3 +85,5 @@
 _**Contact Me :**_ <elwinfrederick@163.com> 
 
 > Plus : Do not _**`ASK`**_ or _**`WONDERING`**_ why I use the prefix of _**`CC`**_ &gt; That's the abbreviation of my girlfriend's name .
+    
+    
