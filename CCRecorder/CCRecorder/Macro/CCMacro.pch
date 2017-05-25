@@ -11,5 +11,6 @@
 
 #import "CCCommonDefine.h"
 
+// $(SRCROOT)/CCRecorder/Macro/CCMacro.pch
 
 #endif

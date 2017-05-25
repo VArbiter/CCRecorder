@@ -7,6 +7,7 @@
 //
 
 #import "CCPlayViewController.h"
+#import "CCCommonDefine.h"
 #import <AVFoundation/AVFoundation.h>
 
 @interface CCPlayViewController ()
