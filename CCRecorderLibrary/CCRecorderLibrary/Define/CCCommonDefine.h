@@ -67,6 +67,10 @@ UIImage * _ccImage(NSString * imageName , BOOL isFile);
 
 NSBundle *_Nullable _ccBundle();
 
+NSString * _ccFilePath(NSString *stringFileName , NSString *stringFileType);
+
+UIImage * _ccImagePath(NSString *stringImageName);
+
 @end
 
 NS_ASSUME_NONNULL_END

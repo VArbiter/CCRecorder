@@ -69,4 +69,20 @@ NSBundle *_ccBundle(){
     return [NSBundle bundleWithPath:[[NSBundle bundleForClass:NSClassFromString(@"CCRecordViewController")]pathForResource:@"CCRecorderLibraryBundle" ofType:@"bundle"]];
 }
 
+NSString * _ccFilePath(NSString *stringFileName , NSString *stringFileType){
+    return [_ccBundle() pathForResource:stringFileName ofType:stringFileType];
+}
+
+UIImage * _ccImagePath(NSString *stringImageName) {
+    CGFloat floatScale = 2.0f;
+    if ([[UIScreen mainScreen] respondsToSelector:@selector(scale)])
+        floatScale = [[UIScreen mainScreen] scale];
+    NSString *stringPath = [NSString stringWithFormat:@"%@%@.png", stringImageName , floatScale > 1.f ? @"@2x" : @"@3x"];
+    NSString *stringFullPath = [[_ccBundle() resourcePath] stringByAppendingPathComponent:stringPath];
+    UIImage *image = [UIImage imageWithCGImage:[UIImage imageWithContentsOfFile:stringFullPath].CGImage
+                                         scale:floatScale
+                                   orientation:UIImageOrientationUp];
+    return image;
+}
+
 @end

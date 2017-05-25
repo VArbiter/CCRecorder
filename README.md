@@ -1,6 +1,6 @@
 #CCRecorder
 
-## Version 0.5.37
+## Version 0.5.38
 
 #### CCRecorder is a Recorder Based On _**`GPUImage`**_ and _**`SBVideoCapture`**_ . It can recording multiple videos and _**Merge them into a square video file**_ , also , add Filters .(Only _BilateralFilter && GaussianBlurFilter (for Beauty issues)_ , but you can add more filters by yourself.)
 

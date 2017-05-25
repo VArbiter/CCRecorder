@@ -45,15 +45,18 @@
     self.view.backgroundColor = [UIColor colorWithRed:16 / 255.0f green:16 / 255.0f blue:16 / 255.0f alpha:1.0f];
     
     self.backButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 44, 44)];
-    [_backButton setImage:[UIImage imageNamed:@"vedio_nav_btn_back_nor.png"] forState:UIControlStateNormal];
-    [_backButton setImage:[UIImage imageNamed:@"vedio_nav_btn_back_pre.png"] forState:UIControlStateHighlighted];
+    [_backButton setImage:_ccImagePath(@"vedio_nav_btn_back_nor")
+                 forState:UIControlStateNormal];
+    [_backButton setImage:_ccImagePath(@"vedio_nav_btn_back_pre")
+                 forState:UIControlStateHighlighted];
     [_backButton addTarget:self action:@selector(pressBackButton:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:self.backButton];
     
     [self initPlayLayer];
     
     self.playButton = [[UIButton alloc] initWithFrame:_playerLayer.frame];
-    [_playButton setImage:[UIImage imageNamed:@"video_icon.png"] forState:UIControlStateNormal];
+    [_playButton setImage:_ccImagePath(@"video_icon")
+                 forState:UIControlStateNormal];
     [_playButton addTarget:self action:@selector(pressPlayButton:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_playButton];
 }

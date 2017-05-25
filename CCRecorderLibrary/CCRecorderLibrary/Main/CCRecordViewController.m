@@ -210,9 +210,10 @@ static BOOL _isLongPressEnable = YES;
                 _buttonRecording.selected = NO;
                 [_handler ccRHStopRecording];
                 
-                UIImage *image = [[UIImage imageNamed:@"Icon_Record_Clicking"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-                [_buttonRecording setImage:image
-                                  forState:UIControlStateSelected];
+//                [_buttonRecording setImage:[_ccImagePath(@"Icon_Record_Clicking") imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]
+//                                  forState:UIControlStateSelected];
+                _buttonRecording.selected = false;
+                _buttonRecording.highlighted = false;
                 
                 /// 延迟启用 , 防止点击过快时候 , 编码未完成, 或实体为释放 所导致的崩溃 . 
                 _buttonRecording.userInteractionEnabled = YES;
@@ -235,13 +236,15 @@ static BOOL _isLongPressEnable = YES;
         UITouch *touch = [touches anyObject];
         CGPoint pointTouch = [touch locationInView:_viewOperationContent];
         if (!CGRectContainsPoint(_buttonRecording.frame, pointTouch)) {
-            UIImage *image = [[UIImage imageNamed:@"Icon_Record_Pause"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-            [_buttonRecording setImage:image
-                              forState:UIControlStateSelected];
+//            [_buttonRecording setImage:[_ccImagePath(@"Icon_Record_Pause") imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]
+//                              forState:UIControlStateHighlighted];
+            _buttonRecording.highlighted = YES;
+            _buttonRecording.selected = false;
         } else {
-            UIImage *image = [[UIImage imageNamed:@"Icon_Record_Clicking"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-            [_buttonRecording setImage:image
-                              forState:UIControlStateSelected];
+//            [_buttonRecording setImage:[_ccImagePath(@"Icon_Record_Clicking") imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]
+//                              forState:UIControlStateSelected];
+            _buttonRecording.highlighted = false;
+            _buttonRecording.selected = YES;
         }
     }
 }
