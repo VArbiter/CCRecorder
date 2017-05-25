@@ -17,6 +17,16 @@
 
 ##### Simple Use
 
+- You need to add `This Source code` to your `info.plist` .
+
+	< key >NSMicrophoneUsageDescription</ key  >
+	
+	< string >Mic</ string >
+	
+	< key >NSCameraUsageDescription</ key >
+	
+	< string >Video</ string >
+
 - Import _**`ENTIRE PROJECT`**_ to your current project
 - To jump to the recorder's view .
 - `First` , in your ViewController _**`#import "CCRecordViewController"`**_
