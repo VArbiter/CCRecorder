@@ -31,7 +31,7 @@
 - `pod 'CCRecorderLibrary' , :path => '../CCRecorderLibrary'`
 - To jump to the recorder's view .
 - `First` , in your ViewController _**`#import "CCRecordViewController"`**_
-- `Second` , _**CCRecordViewController *recordeViewController = [[CCRecordViewController alloc] initWithNibName:@"CCRecordViewController" bundle:[NSBundle mainBundle]];**_
+- `Second` , _**[[CCRecordViewController alloc] initWithNibName:@"CCRecordViewController"                                                          bundle:_ccBundle()];**_
 - `Third` , 
 - _**[self.navigationController pushViewController:recordeViewController animated:YES];**_ 
 - `OR`
@@ -71,7 +71,7 @@ Update :
 
 ---
 
-##### Dependence Framework
+##### Dependence Framework (Already added in podspec)
 
 - **AVFoundation.framework**
 - **QuartzCore.framework**
