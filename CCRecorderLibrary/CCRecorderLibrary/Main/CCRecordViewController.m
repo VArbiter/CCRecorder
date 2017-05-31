@@ -15,14 +15,6 @@
 
 #import "CCPlayViewController.h"
 
-#warning TODO >>> 
-/**
- *  当添加点按或长按的操作 , 就是 UISwitch 时候 , 
- *  对它进行赋值 ,
- *  储存到本地 , 并用通知去改变 .
- */
-static BOOL _isLongPressEnable = YES;
-
 @interface CCRecordViewController () < CCRecorderHandlerDelegate >{
     NSInteger _integerFlashMode ;
     BOOL _isDidAppear;
@@ -129,11 +121,6 @@ static BOOL _isLongPressEnable = YES;
 }
 
 - (void) ccInitDefaultSettings {
-    if (_isLongPressEnable) {
-        /// 长摁必须禁交互
-        _buttonRecording.userInteractionEnabled = NO;
-    }
-    
     _handler = [[CCRecorderHandler alloc] init];
     _handler.delegate = self;
     [_handler ccRHPrepareToRecordWithOutputView:_viewRecording];
@@ -182,69 +169,24 @@ static BOOL _isLongPressEnable = YES;
         [_handler ccRHFocusInPoint:pointFocus];
         return ;
     }
-    
-    if (_isLongPressEnable) {
-        if (!_buttonRecording.enabled) {
-            return;
-        }
-        UITouch *touch = [touches anyObject];
-        CGPoint pointTouch = [touch locationInView:_viewOperationContent];
-//        _buttonRecording.selected = CGRectContainsPoint(_buttonRecording.frame, pointTouch) ? YES : NO;
-        if (CGRectContainsPoint(_buttonRecording.frame, pointTouch)) {
-            _buttonRecording.selected = YES;
-            [_handler ccRHStartRecording];
-        }
-    }
 }
 
 - (void) touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    if (_isLongPressEnable) {
-        if (!_buttonRecording.enabled) {
-            return;
-        }
-
-        UITouch *touch = [touches anyObject];
-        CGPoint pointTouch = [touch locationInView:_viewOperationContent];
-        if (CGRectContainsPoint(_buttonRecording.frame, pointTouch)) {
-            if (_buttonRecording.selected) {
-                _buttonRecording.selected = NO;
-                [_handler ccRHStopRecording];
-                
-//                [_buttonRecording setImage:[_ccImagePath(@"Icon_Record_Clicking") imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]
-//                                  forState:UIControlStateSelected];
-                _buttonRecording.selected = false;
-                _buttonRecording.highlighted = false;
-                
-                /// 延迟启用 , 防止点击过快时候 , 编码未完成, 或实体为释放 所导致的崩溃 . 
-                _buttonRecording.userInteractionEnabled = YES;
-                ccWeakSelf;
-                dispatch_time_t time = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.2f * NSEC_PER_SEC));
-                dispatch_after(time, dispatch_get_main_queue(), ^{
-                    pSelf.buttonRecording.userInteractionEnabled = NO;
-                });
-            }
-        }
-    }
-}
-
-- (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    if (_isLongPressEnable) {
-        if (!_buttonRecording.enabled) {
-            return;
-        }
-        
-        UITouch *touch = [touches anyObject];
-        CGPoint pointTouch = [touch locationInView:_viewOperationContent];
-        if (!CGRectContainsPoint(_buttonRecording.frame, pointTouch)) {
-//            [_buttonRecording setImage:[_ccImagePath(@"Icon_Record_Pause") imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]
-//                              forState:UIControlStateHighlighted];
-            _buttonRecording.highlighted = YES;
+    UITouch *touch = [touches anyObject];
+    CGPoint pointTouch = [touch locationInView:_viewOperationContent];
+    if (CGRectContainsPoint(_buttonRecording.frame, pointTouch)) {
+        if (_buttonRecording.selected) {
+            _buttonRecording.selected = NO;
+            [_handler ccRHStopRecording];
             _buttonRecording.selected = false;
-        } else {
-//            [_buttonRecording setImage:[_ccImagePath(@"Icon_Record_Clicking") imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]
-//                              forState:UIControlStateSelected];
-            _buttonRecording.highlighted = false;
-            _buttonRecording.selected = YES;
+            
+            /// 延迟启用 , 防止点击过快时候 , 编码未完成, 或实体为释放 所导致的崩溃 . 
+            _buttonRecording.userInteractionEnabled = YES;
+            ccWeakSelf;
+            dispatch_time_t time = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.2f * NSEC_PER_SEC));
+            dispatch_after(time, dispatch_get_main_queue(), ^{
+                pSelf.buttonRecording.userInteractionEnabled = NO;
+            });
         }
     }
 }
@@ -311,9 +253,6 @@ static BOOL _isLongPressEnable = YES;
 }
 
 - (IBAction)ccButtonActionRecoding:(UIButton *)sender {
-    if (_isLongPressEnable) {
-        return;
-    }
     if (!_buttonRecording.selected) {
         [_handler ccRHStartRecording];
     } else {

@@ -113,7 +113,6 @@
                             <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                             <state key="normal" image="Icon_Record_Unclick" backgroundImage="Icon_Record_Unclick"/>
                             <state key="selected" image="Icon_Record_Clicking"/>
-                            <state key="highlighted" image="Icon_Record_Pause"/>
                             <connections>
                                 <action selector="ccButtonActionRecoding:" destination="-1" eventType="touchUpInside" id="BrZ-vT-aez"/>
                             </connections>
@@ -196,7 +195,6 @@
         <image name="Icon_Flash_On" width="16" height="21"/>
         <image name="Icon_NextStep" width="55" height="55"/>
         <image name="Icon_Record_Clicking" width="85" height="85"/>
-        <image name="Icon_Record_Pause" width="16" height="16"/>
         <image name="Icon_Record_Unclick" width="85" height="85"/>
     </resources>
 </document>

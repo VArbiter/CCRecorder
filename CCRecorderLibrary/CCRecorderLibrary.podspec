@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "CCRecorderLibrary"
-  s.version      = "0.5.48"
+  s.version      = "0.5.50"
   s.summary      = "CCRecorder."
 
   s.description  = <<-DESC
