@@ -88,7 +88,7 @@ Update :
 
 ##### Special Thanks
 
-- Most of the _**`Core Code To Use AvFoundation`**_ was came from [_**`SBVideoCapture`**_ ](https://github.com/PandaraWen/SBVideoCaptureDemo) (By _**Pandara**_.) .
+- Lightly inspired by [_**`SBVideoCapture`**_ ](https://github.com/PandaraWen/SBVideoCaptureDemo) (By _**Pandara**_.) .
 
 ---
 
