@@ -97,12 +97,9 @@ _**Contact Me :**_ <elwinfrederick@163.com>
 > Plus : Do not _**`ASK`**_ or _**`WONDERING`**_ why I use the prefix of _**`CC`**_ &gt; That's the abbreviation of my girlfriend's name .
     
 ---
-	2017-05-25 19:06:07
-	There's a problem cost me a whole day . Though I solve it , but still don't get it .
-	When pod generate a framework with a resource bundle . And a `xib` file was content in . When I run the project , this `xib` or all `xib` files was not turned into `nib` files . As a result , bundle could not be loaded and throw a exception like `xx.bundle (not yet loaded)` .
-	What I solve this problem is : 
-	1. Drag out the `xib` file and through it to another project .
-	2.  Run it and drag out the `nib` file from `diverData` .
-	3.  Replace the `xib` file with the `nib` file .
-
-	Why the `xib` file can't be compile in a custom bundle ?
+as the answer for previous question :
+	
+	Bundle in a framework . is a resource package . 
+	Complier won't do anything about it . 
+	Like a folder in computer .
+	this bundle is kinda a folder in recorder .
