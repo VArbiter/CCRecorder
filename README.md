@@ -94,7 +94,10 @@ Update :
 
 _**Contact Me :**_ <elwinfrederick@163.com> 
 
-> Plus : Do not _**`ASK`**_ or _**`WONDERING`**_ why I use the prefix of _**`CC`**_ &gt; That's the abbreviation of my girlfriend's name .
+> <del>Plus : Do not _**`ASK`**_ or _**`WONDERING`**_ why I use the prefix of _**`CC`**_ &gt; That's the abbreviation of my girlfriend's name .</del> 
+> 
+> Updated (2017-08-29 23:51:05) : Not any more .
+> 
     
 ---
 as the answer for previous question :
